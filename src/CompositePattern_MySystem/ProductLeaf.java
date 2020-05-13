@@ -9,6 +9,24 @@ package CompositePattern_MySystem;
  *
  * @author hoang
  */
-public class ProductLeaf {
+public class ProductLeaf implements ProductComponent{
+    
+    private String name;
+    private double price;
+
+    public ProductLeaf(String name, double price) {
+        this.name = name;
+        this.price = price;
+    }
+    
+    @Override
+    public void showInformation() {
+        System.out.println(name + " " + "$" + price);
+    }
+
+    @Override
+    public double totalPrice() {
+        return price;
+    }
     
 }

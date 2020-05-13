@@ -3,14 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package CompositePattern_MySystem;
+package ObserverPattern;
 
 /**
  *
  * @author hoang
  */
-public interface ProductComponent {
-    public void showInformation();
-    public double totalPrice();
+public class ArrayList {
     
 }
